@@ -3,7 +3,7 @@ const { setTimeout } = require('timers');
 const {registrarAgenda,visualizarAgenda,inicializarAgenda} = require('./operaciones.js');
 
 const Menu = ` Opciones Registro Veterinaria
-1.-Para Ingreser una nuva mascota Utilice --node index.js registrar "Nombre" "Edad" "Tipo" "Color" "Sntomas"
+1.-Para Ingreser una nuva mascota Utilice --node index.js registrar "Nombre" "Edad" "Animal" "Color" "Enfermedad"
 2.-.Para ver Todos los ingresos --node index.js citas
 3.-Para Inicializar el archivo Citas --node index.js inicializar
 Escriba la opción deseada:`;

@@ -10,12 +10,12 @@ const inicializarAgenda = () => {
 }
 
 const registrarAgenda = (param) =>{
-    let[nombre, edad, tipo, color, sintomas]=param;
+    let[nombre, edad, animal, color, enfermedad]=param;
     let agregarCita =  {nombre, 
                         edad, 
-                        tipo, 
+                        animal, 
                         color, 
-                        sintomas
+                        enfermedad
                        };
 try {
     console.clear();
@@ -49,10 +49,10 @@ const visualizarAgenda = () =>{
         if (!archivoJson || !archivoJson.length){
             console.log(`\nNO HAY CITAS CONFIRMADAS`)
         }else{
-            let cita = `" "-- "Nombre" -- "Edad" -- "Tipo" -- "Color" -- "Sintomas"`;
+            let cita = `" "-- "Nombre" -- "Edad" -- "Animal" -- "Color" -- "Enfermedad"`;
             console.log(cita);
             archivoJson.forEach((item,index) => {
-                let cita = `${index+1} ) -- ${item.nombre} -- ${item.edad} -- ${item.tipo} -- ${item.color} -- ${item.sintomas}`;
+                let cita = `${index+1} ) -- ${item.nombre} -- ${item.edad}     -- ${item.animal}   -- ${item.color}   -- ${item.enfermedad}`;
                  console.log(cita);
                 });
         }
